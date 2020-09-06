@@ -151,7 +151,7 @@ public function findFile($class)
 
 10. 查看findFileWithExtension方法，首先会查找符合psr-4规范的类，找不到会查找符合psr-0规范的类，故类的自动加载是这样实现的
 
-```
+```php
 private function findFileWithExtension($class, $ext)
 {
     // PSR-4 lookup
